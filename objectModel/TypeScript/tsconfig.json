@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "declaration": true,
+        "experimentalDecorators": true,
+        "target": "ES6",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "outDir": "./lib",
+        "resolveJsonModule": true,
+        "allowJs": true
+    },
+    "include": [
+        "./index.ts",
+        "./Utilities/evaluateRegexp.js",
+        "./__test__/**/*.ts"
+    ]
+}

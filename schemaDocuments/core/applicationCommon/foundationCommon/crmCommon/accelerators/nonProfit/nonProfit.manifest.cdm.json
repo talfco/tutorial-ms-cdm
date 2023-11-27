@@ -1,0 +1,29 @@
+{
+  "documentVersion": "1.0.7",
+  "$schema": "CdmManifest.cdm.json",
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "manifestName": "nonProfit",
+  "explanation": "CDM 'nonProfit' Accelerators",
+  "subManifests": [
+    {
+      "manifestName": "nonProfitCore",
+      "definition": "nonProfitCore/nonProfitCore.manifest.cdm.json"
+    },
+    {
+      "manifestName": "nonProfitMeasurement",
+      "definition": "nonProfitMeasurement/nonProfitMeasurement.manifest.cdm.json"
+    },
+    {
+      "manifestName": "nonProfitForSales",
+      "definition": "nonProfitForSales/nonProfitForSales.manifest.cdm.json"
+    },
+    {
+      "manifestName": "nonProfitIati",
+      "definition": "nonProfitIati/nonProfitIati.manifest.cdm.json"
+    },
+    {
+      "manifestName": "nonProfitVolunteers",
+      "definition": "nonProfitVolunteers/nonProfitVolunteers.manifest.cdm.json"
+    }
+  ]
+}

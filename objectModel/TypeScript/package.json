@@ -1,0 +1,61 @@
+{
+  "name": "cdm.objectmodel",
+  "version": "1.7.5",
+  "description": "The typescript object model for CDM.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./copy-resources.ps1",
+    "test": "jest",
+    "test-adls": "jest __test__/Cdm/Storage/adlsAdapter.test.ts",
+    "test-verbose": "jest --ci --verbose",
+    "test-ci": "jest --ci --verbose --reporters=default --reporters=jest-junit --coverage"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.6",
+    "@types/jest": "^29.2.0",
+    "babelify": "^10.0.0",
+    "eslint": "^7.21.0",
+    "jest": "^29.2.1",
+    "jest-junit": "^14.0.1",
+    "ts-jest": "^29.0.3",
+    "ts-stopwatch": "0.0.4",
+    "typescript": "^4.8.4"
+  },
+  "author": "Microsoft Corporation",
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 10000,
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testMatch": [
+      "<rootDir>/**/__test__/**/*.test.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "collectCoverageFrom": [
+      "**/*.ts",
+      "!*.ts",
+      "!**/*.d.ts"
+    ],
+    "coverageReporters": [
+      "cobertura",
+      "text-summary"
+    ]
+  },
+  "dependencies": {
+    "@azure/msal-node": "^1.14.6",
+    "@types/node": "^14.14.31",
+    "cdm.objectmodel.cdmstandards": "^2.8.0",
+    "guid-typescript": "^1.0.9",
+    "using-statement": "^0.3.1"
+  },
+  "license": "MIT"
+}

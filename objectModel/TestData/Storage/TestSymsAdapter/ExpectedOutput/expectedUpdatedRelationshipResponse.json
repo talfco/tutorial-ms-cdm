@@ -1,0 +1,26 @@
+{
+    "name": "E1_E2_relationship",
+    "type": "RELATIONSHIP",
+    "properties": {
+        "Namespace": {
+            "DatabaseName": "SymsTestDatabase"
+        },
+        "FromTableName": "E1",
+        "ToTableName": "E2",
+        "RelationshipType": "MANYTOONE",
+        "ColumnRelationshipInformations": [
+            {
+                "FromColumnName": "parentId",
+                "ToColumnName": "EIdModified"
+            }
+        ],
+        "Properties": {},
+        "Origin": {
+            "Type": "SPARK",
+            "InstanceId": null
+        },
+        "PublishStatus": "PUBLISHED",
+        "ObjectVersion": 2,
+        "ObjectId": ""
+    }
+}

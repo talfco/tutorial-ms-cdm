@@ -1,0 +1,12 @@
+{
+    "jsonSchemaSemanticVersion": "1.0.0",
+    "imports": [
+		{
+            "corpusPath": "missingImport.cdm.json"
+        },
+        {
+            "corpusPath": "notMissing.cdm.json"
+        }
+    ],
+    "definitions":  []
+}

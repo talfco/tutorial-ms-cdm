@@ -1,0 +1,33 @@
+Incoming Relationships For: Person:
+  Name: something_NonPoly
+  FromEntity: local:/Person.cdm.json/Person
+  FromEntityAttribute: name
+  ToEntity: local:/Person.cdm.json/Person/hasAttributes/something/entity/projection/source/NonPoly
+  ToEntityAttribute: name
+  ExhibitsTraits:
+      means.backward
+            [Parameter (Name / DefaultValue): test / ]
+  [Argument Value: Description for the backward direction in the relationship.]
+
+      means.forward
+            [Parameter (Name / DefaultValue): test / ]
+  [Argument Value: Description for the forward direction in the relationship.]
+
+
+
+  Name: something_NonPoly
+  FromEntity: local:/Person.cdm.json/Person
+  FromEntityAttribute: number
+  ToEntity: local:/Person.cdm.json/Person/hasAttributes/something/entity/projection/source/NonPoly
+  ToEntityAttribute: number
+  ExhibitsTraits:
+      means.backward
+            [Parameter (Name / DefaultValue): test / ]
+  [Argument Value: Description for the backward direction in the relationship.]
+
+      means.forward
+            [Parameter (Name / DefaultValue): test / ]
+  [Argument Value: Description for the forward direction in the relationship.]
+
+
+

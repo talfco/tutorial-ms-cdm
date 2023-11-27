@@ -1,0 +1,21 @@
+{
+  "defaultNamespace" : "local",
+  "adapters" : [
+    {
+      "type" : "local",
+      "config" : {
+        "root" : "../../6-create-net-new-entities/sample-data",
+        "locationHint" : ""
+      },
+      "namespace" : "local"
+    },
+    {
+      "type" : "local",
+      "config" : {
+        "root" : "../../example-public-standards",
+        "locationHint" : ""
+      },
+      "namespace" : "cdm"
+    }
+  ]
+}
